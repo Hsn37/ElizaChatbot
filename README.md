@@ -1,4 +1,4 @@
-# Slip language parser for the script of Eliza the Therapist
+# Slip parser for the script of Eliza
 
 The chatbot is based on Slip. This is a parser for that language. The script contained is the default script for Eliza. Can be changed entirely.
 

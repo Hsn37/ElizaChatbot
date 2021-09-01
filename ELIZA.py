@@ -23,7 +23,7 @@ class ELIZA():
 
 	def parseScript(self):
 
-		f = open('script.elz', 'r')
+		f = open('script.txt', 'r')
 
 		init, final, quit, synon = [],[],[],[]
 		pre, post = {}, {}

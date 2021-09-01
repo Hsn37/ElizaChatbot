@@ -2,6 +2,12 @@
 
 The chatbot is based on Slip. This is a parser for that language. The script contained is the default script for Eliza. Can be changed entirely.
 
+**Instructions:**  
+    Run ELIZA.py script in the console (open the console in the directory of the file and run *python ELIZA.py*).  
+    It will launch the bot. You can type your messages in the console and the bot will respond there.  
+    '>>>' is Eliza's response  
+    '>' is your message  
+
 # Script Layout
 **Keywords**
 1) initial = says this when it starts

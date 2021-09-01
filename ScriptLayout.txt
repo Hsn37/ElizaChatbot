@@ -1,0 +1,37 @@
+data:
+
+agent class:
+
+initial = list
+# says this when it starts
+
+final = list
+# says this when it quits
+
+quit = list
+# if input in this list, then quit
+
+pre = dictionary of substitutions
+# happens in step 2
+
+post = dictionary of subs
+# happens in step 6
+
+class key
+keyword, priority, decomposition is a dict of {decomp:listOfReAssmb}
+
+synon = list of lists
+
+logic flow:
+1) break down input into list of words
+2) make pre subs
+3) search for keywords, and make a list in descending order of priorities.
+4) for each keyword, look for decomposition strings in the actual sentence. like substrings. if the substring is not present, move to the next keyword.
+5) once decomp has been chosen, choose the reassembly pattern. cycle through the list of reassemblies.
+6) make post subs
+
+synonyms: work in decomp. signified by @. the word with @ is replaced with synonyms to see if decomp works or not.
+(number) in reassembly: place the content of the ith star in the actual sentence into the reassembly sentence.
+$ symbol means this reassembly is saved and other keywords are searched first. if another keyword gives a sentence, go for it. otherwise choose a saved one. if no saved sentence, then simply choose xnone keyword.
+
+TADA! output is on the screen
